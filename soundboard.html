@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cringe Soundboard</title>
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .header {
+            margin-bottom: 20px;
+        }
+        .buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .button {
+            background-color: black;
+            color: white;
+            border: 2px solid purple;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: purple;
+            color: black;
+        }
+    </style>
+</head>
+<body>
 
+<div class="header">
+    <h1>Soundboard</h1>
+</div>
+
+<div class="buttons-container">
+    <button class="button" onclick="playSound('sound1')">Pog</button>
+    <button class="button" onclick="playSound('sound2')">Skibidi Toilet</button>
+    <button class="button" onclick="playSound('sound3')">What The Ohio</button>
+    <button class="button" onclick="playSound('sound4')">Level 1 Gyat</button>
+    <button class="button" onclick="playSound('sound5')">Level 2 Gyat</button>
+    <button class="button" onclick="playSound('sound6')">Level 3 Gyat</button>
+</div>
+
+<audio id="sound1" src="sounds/NcwH5K29Jq_sN7j9rA7ooQ.mp3"></audio>
+<audio id="sound2" src="sounds/NcwH5K29Jq_sN7j9rA7ooQ (1).mp3"></audio>
+<audio id="sound3" src="sounds/NcwH5K29Jq_sN7j9rA7ooQ (3).mp3"></audio>
+<audio id="sound4" src="sounds/NcwH5K29Jq_sN7j9rA7ooQ (4).mp3"></audio>
+<audio id="sound5" src="sounds/NcwH5K29Jq_sN7j9rA7ooQ (5).mp3"></audio>
+<audio id="sound6" src="sounds/NcwH5K29Jq_sN7j9rA7ooQ (6).mp3"></audio>
+
+<script>
+    function playSound(soundId) {
+        var sound = document.getElementById(soundId);
+        sound.play();
+    }
+</script>
+
+</body>
+</html>
